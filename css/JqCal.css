@@ -1,0 +1,63 @@
+﻿/*.divcal {
+    width:66px;
+    height:79px;
+    background-image:url("../src/calendar.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    text-align:center;
+    border:1px solid silver;
+    background-position:center;
+}*/
+.divcal {
+    width:66px;
+    height:79px;
+    font-family:'Microsoft YaHei';
+    text-align:center;
+    background-position:center;
+}
+.divCalYearMonth {
+    width:66px;
+    height:20px;
+    line-height:20px;
+    background-color:#8CC63F;
+    border-top:1px solid silver;
+    border-left:1px solid silver;
+    border-right:1px solid silver;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color:white;
+    text-align:center;
+    font-size:10pt;
+    float:left;
+}
+.divCalDay {
+    width:66px;
+    height:20px;
+    border-left:1px solid silver;
+    border-right:1px solid silver;
+    border-radius:0px;
+    font-size:14pt;
+    float:left;
+}
+.divCalClear {
+    width:66px;
+    height:6px;
+    text-align:center;
+    font-size:8pt;
+    border-left:1px solid silver;
+    border-right:1px solid silver;
+    color:silver;
+    float:left;
+}
+.divCalWeek {
+    width:66px;
+    height:26px;
+    line-height:26px;
+    font-size:10pt;
+    float:left;
+    border-left:1px solid silver;
+    border-right:1px solid silver;
+    border-bottom:1px solid silver;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 15px;
+}
