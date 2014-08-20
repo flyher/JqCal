@@ -17,14 +17,17 @@
                     <div class="div_help">原理:css绘制，本控件依赖Jquery，在页面中引用JqCal.css,JqCal.js即可。<br />目前版本:beta 0.1</div>
                 </div>
                 <div class="content">
-                    <div class="div_describe">1、生成指定日期的样式图</div>
-                    <div class="chart" id="chart"></div>
+                    <div class="div_describe">1、生成指定日期的样式图（调用方式:JqCal("2014,8,19", true, "#chart1");）</div>
+                    <div class="chart" id="chart1"></div>
+					
+                    <div class="div_describe">2、生成指定日期的英文样式图（调用方式:JqCal("2014,8,19", false, "#chart2");)</div>
+                    <div class="chart" id="chart2"></div>					
 
-                    <div class="div_describe">2、生成当前日期的样式图</div>
-                    <div class="chart" id="chart2"></div>
-
-                    <div class="div_describe">3、生成指定日期的英文仰视图</div>
+                    <div class="div_describe">3、生成当前日期的样式图（调用方式:JqCalAuto(true, "#chart3");)</div>
                     <div class="chart" id="chart3"></div>
+
+                    <div class="div_describe">4、生成当前日期的英文样式图（调用方式:JqCalAuto(false, "#chart4");)</div>
+                    <div class="chart" id="chart4"></div>
                 </div>
                 <div class="foot">
                     <div class="copy">•Powered by <a href="https://github.com/flyher/JqCal">flyher</a></div>

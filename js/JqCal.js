@@ -3,13 +3,14 @@
 
 /*生成日历插件*/
 $(document).ready(function () {
-    JqCal("2014,8,19", true, "#chart");
-    JqCalAuto(true, "#chart2");
-    JqCalAuto(false, "#chart3");
+    JqCal("2014,8,19", true, "#chart1");
+    JqCal("2014,8,19", false, "#chart2");	
+    JqCalAuto(true, "#chart3");
+    JqCalAuto(false, "#chart4");
 });
 function JqCal(date, isCN, divId) {
     ///<summary>绘制给定日期的样式图</summary>
-    ///<para="date">字符串日期,形如:2014-08-09,切记要补全0</para>
+    ///<para="date">字符串日期,形如:2014,08,09（若使用2014-08-09在服务器上有时会报错，未知原因）</para>
     ///<para="isCN">是否显示中文星期</para>
     ///<para="divId">日期控件显示位置div</para>
     $(divId).html("<div class='divcal' id='divcal'><div class='divCalYearMonth' id='divCalYearMonthId'></div><div class='divCalDay' id='divCalDay'></div><div class='divCalClear' id='divCalClear'>--------</div><div class='divCalWeek' id='divCalWeek'></div></div>");
