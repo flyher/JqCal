@@ -3,7 +3,7 @@
 
 /*生成日历插件*/
 $(document).ready(function () {
-    JqCal("2014-8-19", true, "#chart");
+    JqCal("2014,8,19", true, "#chart");
     JqCalAuto(true, "#chart2");
     JqCalAuto(false, "#chart3");
 });
@@ -14,10 +14,10 @@ function JqCal(date, isCN, divId) {
     ///<para="divId">日期控件显示位置div</para>
     $(divId).html("<div class='divcal' id='divcal'><div class='divCalYearMonth' id='divCalYearMonthId'></div><div class='divCalDay' id='divCalDay'></div><div class='divCalClear' id='divCalClear'>--------</div><div class='divCalWeek' id='divCalWeek'></div></div>");
     var weekindex = new Date(date).getDay();
-    date = date.split("-");
+    date = date.split(",");
     $(divId).children().find(".divCalYearMonth").html(date[0] + "-" + date[1]);
     $(divId).children().find(".divCalDay").html(date[2]);
-    var weekname= new Array('Sunday',"Monday","Tuesday",'Wednesday','Thursday','Friday','Saturday');
+    var weekname= new Array('Sun',"Mon","Tue",'Wed','Thu','Fri','Sat');
     if (isCN) {
         weekname = new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
     }
@@ -33,7 +33,7 @@ function JqCalAuto(isCN, divId) {
     var date = new Date();
     $(divId).children().find(".divCalYearMonth").html(date.getFullYear()+ "-" + (parseInt(date.getMonth())+1));
     $(divId).children().find(".divCalDay").html(date.getDate());
-    var weekname = new Array('Sunday', "Monday", "Tuesday", 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+    var weekname = new Array('Sun', "Mon", "Tue", 'Wed', 'Thu', 'Fri', 'Sat');
     if (isCN) {
         weekname = new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
     }
