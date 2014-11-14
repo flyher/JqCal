@@ -44,7 +44,6 @@
     <Content Include="js\JqCal.js" />
     <Content Include="js\jquery-1.11.1.js" />
     <Content Include="Web.config" />
-    <Content Include="模板.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
